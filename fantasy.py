@@ -104,19 +104,35 @@ if __name__ == "__main__":
     # }
 
     # Week 11 results
+    # rankings_dict = {
+    #     'nate': 8,
+    #     'steve': 7, 
+    #     'addison': 7,
+    #     'matt': 6,
+    #     'anton': 6,
+    #     'anthony': 6,
+    #     'abu': 5,
+    #     'mark': 5,
+    #     'joyce': 5,
+    #     'micah': 4,
+    #     'cam': 4,
+    #     'taylor': 3
+    # }
+
+    # Week 12 results
     rankings_dict = {
         'nate': 8,
+        'addison': 8,
         'steve': 7, 
-        'addison': 7,
+        'anton': 7,
         'matt': 6,
-        'anton': 6,
         'anthony': 6,
+        'mark': 6,
+        'joyce': 6,
         'abu': 5,
-        'mark': 5,
-        'joyce': 5,
-        'micah': 4,
+        'micah': 5,
         'cam': 4,
-        'taylor': 3
+        'taylor': 4
     }
 
     # week_11 = [
@@ -128,14 +144,14 @@ if __name__ == "__main__":
     #     ['anton', 'addison']
     # ]
 
-    week_12 = [
-        ['nate', 'anton'],
-        ['abu', 'taylor'],
-        ['cam', 'joyce'],
-        ['matt', 'mark'], 
-        ['micah', 'anthony'],
-        ['addison', 'steve']
-    ]
+    # week_12 = [
+    #     ['nate', 'anton'],
+    #     ['abu', 'taylor'],
+    #     ['cam', 'joyce'],
+    #     ['matt', 'mark'], 
+    #     ['micah', 'anthony'],
+    #     ['addison', 'steve']
+    # ]
 
     week_13 = [
         ['nate', 'addison'],
@@ -152,7 +168,7 @@ if __name__ == "__main__":
     # my_league = League(rankings_dict, week_11 + week_12)
     # my_league = League(rankings_dict, week_11 + week_12 + week_13)
 
-    my_league = League(rankings_dict, week_12 + week_13)
+    my_league = League(rankings_dict, week_13)
     my_league.gen_outcomes()
     my_league.gen_playoff_probs(6)
     my_league.display_playoff_probabilities()
