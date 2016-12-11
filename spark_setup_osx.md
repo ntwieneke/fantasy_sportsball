@@ -13,8 +13,10 @@ We recommend selecting "Pre-Built for Hadoop 2.7 and Later"
 
 6.  Bashrc, `nano ~/.bashrc`, then add the following lines:
 
-`export SPARK_HOME=/usr/local/Cellar/spark-2.0.2-bin-hadoop2.7
+```
+export SPARK_HOME=/usr/local/Cellar/spark-2.0.2-bin-hadoop2.7
 export PYTHONPATH=$SPARK_HOME/python/:$PYTHONPATH
-export PATH="$SPARK_HOME/bin:$PATH"`
+export PATH="$SPARK_HOME/bin:$PATH"
+```
 
 To apply these changes, then run `source ~/.bashrc` in Terminal
