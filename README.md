@@ -1,4 +1,2 @@
-# fantasy_sportsball
-Fantasy Sports Algorithms
+# Welcome to Fantasy_Sportsball!
 
-Testing first push!
