@@ -8,10 +8,11 @@ This walkthrough is designed for beginners who may not have a lot of experience 
 
 In simple terms, Spark allows you to easily spread your large scale data jobs across multiple computers.  Spark is easy to use, and if you are familiar with Python, Pyspark is a great way to get started running parallelized jobs.
 
-## Pre-requistes:
+#### Pre-requistes:
 + Python
 + Pip
 
+## Setup
 
 1.  [Download Apache Spark](http://spark.apache.org/downloads.html)
 We recommend selecting "Pre-Built for Hadoop 2.7 and Later" so that you skip the 'build' step.
@@ -26,24 +27,13 @@ We recommend selecting "Pre-Built for Hadoop 2.7 and Later" so that you skip the
 
 5.  Now that you have the prebuilt Spark setup, make sure that the spark shell itself works.  To do this run `/usr/local/Cellar/spark-2.0.2-bin-hadoop2.7/bin/pyspark ` in Terminal
 
-If this is successful, you should see:
+   If this is successful, you should see "Welcome to Pyspark"
 
-'''
-Welcome to
-      ____              __
-     / __/__  ___ _____/ /__
-    _\ \/ _ \/ _ `/ __/  '_/
-   /__ / .__/\_,_/_/ /_/\_\   version 2.0.2
-      /_/
-'''
+   You now have Pyspark setup, but the next steps will be necessary to ensure that your python can import your Pyspark module.
 
-You now have Pyspark setup, but the next steps will be necessary to ensure that your python can import your Pyspark module.
+   *Note* If this step failed, you may want to go back to step 1 and make sure that you downloaded a pre-built version of spark.
 
-*Note* If this step failed, you may want to go back to step 1 and make sure that you downloaded a pre-built version of spark.
-
-6.  Make sure that your .bashrc file is getting sourced.  To do so, exit your Pyspark session 'exit()', and run 'nano ~/.bash_profile'.  There make sure there is a `source ~/.bashrc` line at the end. 
-
-Then edit your bashrc  `nano ~/.bashrc`, and add the following lines:
+6.  Make sure that your .bashrc file is getting sourced.  To do so, exit your Pyspark session 'exit()', and run 'nano ~/.bash_profile'.  There make sure there is a `source ~/.bashrc` line at the end. Then edit your bashrc  `nano ~/.bashrc`, and add the following lines:
 
 ```
 export SPARK_HOME=/usr/local/Cellar/spark-2.0.2-bin-hadoop2.7
@@ -61,4 +51,4 @@ The third line adds the bin folder which allows you to run spark commands from T
 
 After you have added the lines, you need a source your .bashrc files by running `source ~/.bashrc` in Terminal.  This executes the changes you made above.
 
-7.  Now to test, run 'python' in Terminal to launch python, and enter 'import pyspark' to make sure the library imports.  If it doesn't fail you are all set!
+Now to test, run 'python' in Terminal to launch python, and enter 'import pyspark' to make sure the library imports.  If it doesn't fail you are all set!
