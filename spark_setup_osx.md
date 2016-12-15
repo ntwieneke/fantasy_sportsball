@@ -21,11 +21,9 @@ We recommend selecting "Pre-Built for Hadoop 2.7 and Later" so that you skip the
 
 3.  You will also need py4j to allow Python to access Java objects (necessary to run Pyspark).  To install py4j, you can run `pip install py4j` in Terminal
 
-3.  Unzip spark-2.0.2-bin-hadoop2.7.tgz, you can do this by running `gunzip ~/Downloads/spark-2.0.2-bin-hadoop2.7.tgz` in Terminal
+3.  Unzip spark-2.0.2-bin-hadoop2.7.tgz and move it to Move Spark to somewhere in your PATH, you can do this by running `tar zxvf ~/Downloads/spark-2.0.2-bin-hadoop2.7.tgz /usr/local/Cellar` in Terminal
 
-4.  Move Spark to somewhere in your PATH, such as /usr/local/Cellar, you can do this with the command `mv ~/Downloads/spark-2.0.2-bin-hadoop2.7 /usr/local/Cellar`
-
-5.  Now that you have the prebuilt Spark setup, make sure that the spark shell itself works.  To do this run `/usr/local/Cellar/spark-2.0.2-bin-hadoop2.7/bin/pyspark ` in Terminal
+4.  Now that you have the prebuilt Spark setup, make sure that the spark shell itself works.  To do this run `/usr/local/Cellar/spark-2.0.2-bin-hadoop2.7/bin/pyspark ` in Terminal
 
    If this is successful, you should see "Welcome to Pyspark"
 
@@ -33,7 +31,7 @@ We recommend selecting "Pre-Built for Hadoop 2.7 and Later" so that you skip the
 
    *Note* If this step failed, you may want to go back to step 1 and make sure that you downloaded a pre-built version of spark.
 
-6.  Make sure that your .bashrc file is getting sourced.  To do so, exit your Pyspark session 'exit()', and run 'nano ~/.bash_profile'.  There make sure there is a `source ~/.bashrc` line at the end. Then edit your bashrc  `nano ~/.bashrc`, and add the following lines:
+5.  Make sure that your .bashrc file is getting sourced.  To do so, exit your Pyspark session 'exit()', and run 'nano ~/.bash_profile'.  There make sure there is a `source ~/.bashrc` line at the end. Then edit your bashrc  `nano ~/.bashrc`, and add the following lines:
 
 ```
 export SPARK_HOME=/usr/local/Cellar/spark-2.0.2-bin-hadoop2.7
