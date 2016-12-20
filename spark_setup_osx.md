@@ -2,8 +2,6 @@
 
 This walkthrough is designed for beginners who may not have a lot of experience setting up cluster computing framework tools like Apache Spark.  
 
-**Note** This walkthrough is targeted towards those who 
-
 ## Why should I use Spark?
 
 In simple terms, Spark allows you to easily spread your large scale data jobs across multiple computers.  Spark is easy to use, and if you are familiar with Python, Pyspark is a great way to get started running parallelized jobs.
